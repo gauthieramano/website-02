@@ -20,10 +20,16 @@ import authentication from "./authentication";
 
 const app: Application = express(feathers());
 
+const helmetConfig: {
+  contentSecurityPolicy: false;
+} = {
+  contentSecurityPolicy: false,
+};
+
 // Load app configuration
 app.configure(configuration());
 // Enable security, CORS, compression, favicon and body parsing
-app.use(helmet());
+app.use(helmet(helmetConfig));
 app.use(cors());
 app.use(compress());
 app.use(express.json());
