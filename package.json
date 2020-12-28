@@ -1,9 +1,14 @@
 {
-  "name": "website-3",
-  "description": "Website Feathers 2020-12-26",
+  "name": "website-02",
+  "description": "Website 02 React Next Feathers 2020-12-26",
   "version": "0.0.0",
   "homepage": "",
   "main": "src",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/gauthieramano/website-02.git"
+  },
+  "license": "MIT",
   "keywords": [
     "feathers"
   ],
